@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.6",
+    "@types/nconf": "^0.10.3",
+    "@types/node": "^20.6.2",
+    "@types/yargs": "^17.0.24",
+    "esbuild": "^0.19.3",
+    "esbuild-register": "^3.5.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "/usr/bin/node --no-warnings=ExperimentalWarning --loader esbuild-register/loader --require esbuild-register ./src/index.ts series 0DM1M1P06SVAX https://sevenseasentertainment.com/series/magika-swordsman-and-summoner/",
+    "build": "node --no-warnings=ExperimentalWarning build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "enquirer": "^2.4.1",
+    "env-paths": "^3.0.0",
+    "limiter-es6-compat": "^2.1.2",
+    "nconf": "^0.12.0",
+    "nconf-yaml": "^1.0.2",
+    "yargs": "^17.1.1-candidate.0"
+  },
+  "type": "module"
+}
