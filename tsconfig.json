@@ -7,16 +7,16 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "rootDir": "./src",
+    "rootDir": "src",
     "moduleResolution": "Node10",
     "resolveJsonModule": true,
     "allowArbitraryExtensions": true,
     "declaration": true,
     "declarationMap": true,
     "inlineSourceMap": true,
-    "outDir": "./dist",
+    "outDir": "dist",
     "removeComments": true,
-    "sourceRoot": "./src",
+    "sourceRoot": "src",
     "inlineSources": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -31,5 +31,6 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true
-  }
+  },
+  "exclude": ["node_modules", "dist", "build.js"]
 }

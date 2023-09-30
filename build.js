@@ -2,7 +2,6 @@ import { build } from "esbuild";
 import Package from './package.json' assert { type: "json" };
 
 build({
-  // tsconfig: "./tsconfig.json",
   entryPoints: ["src/index.ts"],
   bundle: true,
   minify: true,

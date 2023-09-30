@@ -5,11 +5,26 @@ import Paths from 'env-paths'
 import { randomUUID } from 'crypto'
 import Enquirer from 'enquirer'
 
+//@ts-ignore - typescript sees only depedencies and devDependencies inside package.json
+import { description, version } from '../package.json'
+
 const appPaths = Paths('seven-seas-scraper', { suffix: '' })
 mkdirSync(appPaths.config, { recursive: true })
 
 import nconf from 'nconf'
-nconf.formats.yaml = await import('nconf-yaml')
+import yaml from 'js-yaml'
+nconf.formats.yaml = {
+  parse: str => yaml.load(str, { json: true }),
+  stringify: (
+    value: any,
+    replacer?: ((this: any, key: string, value: any) => any) | undefined,
+    space?: number | undefined
+  ) => yaml.dump(value, {
+    noCompatMode: true,
+    indent: space,
+    replacer
+  })
+}
 declare module 'nconf' {
   export interface IFormats {
      json: nconf.IFormat;
@@ -174,8 +189,8 @@ export const scrapeSeriesBooks = async ({ url, seriesId }: ProgramArgsSeriesBook
 }
 
 yargs(hideBin(process.argv))
-  .version('1.0.0')
-  .usage('A tool to scrape manga metadata from Seven Seas Entertainment website')
+  .version(version)
+  .usage(description)
   .demandCommand()
   .command({
     command: 'series <seriesId> <url>',
