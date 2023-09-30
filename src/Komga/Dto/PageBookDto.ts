@@ -2,7 +2,7 @@ import {
   BookDto,
   PageableObject,
   SortObject
-} from "./all"
+} from "."
 
 export default interface PageBookDto {
   totalElements: number

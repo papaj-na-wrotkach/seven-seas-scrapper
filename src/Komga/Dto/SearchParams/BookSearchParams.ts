@@ -1,4 +1,4 @@
-import { MediaStatus, ReadStatus } from "../all"
+import { MediaStatus, ReadStatus } from ".."
 
 export default interface BookSearchParams {
   search?: string

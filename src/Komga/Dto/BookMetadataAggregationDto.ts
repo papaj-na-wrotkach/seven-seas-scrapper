@@ -1,4 +1,4 @@
-import { AuthorDto } from "./all"
+import { AuthorDto } from "."
 
 export default interface BookMetadataAggregationDto {
   authors: AuthorDto[]

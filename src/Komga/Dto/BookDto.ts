@@ -2,7 +2,7 @@ import {
   BookMetadataDto,
   MediaDto,
   ReadProgressDto
-} from "./all"
+} from "."
 
 export default interface BookDto {
     id: string

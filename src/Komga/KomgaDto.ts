@@ -1,4 +1,4 @@
-import SeriesMetadataUpdateDto from "./Dto/SeriesMetadataUpdateDto";
+import SeriesMetadataUpdateDto from "./Dto/SeriesMetadataUpdateDto"
 
 export const DefaultSeriesMetadataUpdateDto = {
   statusLock: false,

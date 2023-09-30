@@ -1,4 +1,4 @@
-import { SortObject } from "./all"
+import { SortObject } from "."
 
 export default interface PageableObject {
   offset: number

@@ -1,4 +1,4 @@
-import { AuthorDto, WebLinkDto } from "./all"
+import { AuthorDto, WebLinkDto } from "."
 
 export default interface BookMetadataUpdateDto {
   title?: string

@@ -8,7 +8,7 @@ import {
   PageSeriesDto,
   SeriesDto,
   SeriesMetadataUpdateDto
-} from "./Dto/all"
+} from "./Dto"
 
 export interface KomgaClientOptions {
   url: string

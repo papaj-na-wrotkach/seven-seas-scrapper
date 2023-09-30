@@ -4,7 +4,7 @@ import {
   ReadingDirection,
   SeriesStatus,
   WebLinkDto
-} from "./all"
+} from "."
 
 export default interface SeriesMetadataUpdateDto {
   ageRating?: AgeRating

@@ -1,4 +1,4 @@
-import { MediaStatus } from "./all"
+import { MediaStatus } from "."
 
 export default interface MediaDto {
   status: MediaStatus

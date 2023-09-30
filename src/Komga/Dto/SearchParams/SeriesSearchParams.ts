@@ -1,4 +1,4 @@
-import { ReadStatus, SeriesStatus } from "../all"
+import { ReadStatus, SeriesStatus } from ".."
 
 export default interface SeriesSearchParams {
   search?: string

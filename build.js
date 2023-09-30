@@ -1,5 +1,5 @@
-import { build } from "esbuild";
-import Package from './package.json' assert { type: "json" };
+import { build } from "esbuild"
+import Package from './package.json' assert { type: "json" }
 
 build({
   entryPoints: ["src/index.ts"],
@@ -11,4 +11,4 @@ build({
   platform: 'node', // for ESM
   format: "esm",
   tsconfig: "tsconfig.json",
-});
+})

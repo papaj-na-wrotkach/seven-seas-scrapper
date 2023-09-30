@@ -1,4 +1,4 @@
-import { BookMetadataAggregationDto, SeriesMetadataDto } from "./all"
+import { BookMetadataAggregationDto, SeriesMetadataDto } from "."
 
 export default interface SeriesDto {
   id: string

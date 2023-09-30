@@ -7,7 +7,7 @@ import {
   AuthorDto,
   Book,
   Series
-} from "../Komga/Dto/all"
+} from "../Komga/Dto"
 
 import { RateLimiter } from "limiter-es6-compat"
 

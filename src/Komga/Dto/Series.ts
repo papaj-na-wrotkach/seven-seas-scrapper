@@ -1,4 +1,4 @@
-import { AgeRating, AlternateTitleDto } from "./all"
+import { AgeRating, AlternateTitleDto } from "."
 
 export default interface Series {
   title?: string

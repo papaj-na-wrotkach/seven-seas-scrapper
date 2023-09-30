@@ -2,7 +2,7 @@ import {
   PageableObject,
   SeriesDto,
   SortObject
-} from "./all"
+} from "."
 
 export default interface PageSeriesDto {
   totalElements: number
